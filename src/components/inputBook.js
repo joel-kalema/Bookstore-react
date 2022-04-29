@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/state-in-constructor */
 import React from 'react';
 
 class InputBook extends React.Component {
@@ -26,7 +29,7 @@ class InputBook extends React.Component {
       <form>
         <input type="text" placeholder="Add title..." value={this.state.title} name="title" onChange={this.onChange} />
         <input type="text" placeholder="Add author..." value={this.state.author} name="author" onChange={this.onChange} />
-        <button>Submit</button>
+        <button type="button">Submit</button>
       </form>
     );
   }
