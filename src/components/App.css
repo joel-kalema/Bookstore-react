@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambay&family=Krona+One&family=Montserrat:wght@300;900&family=Poppins&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cambay&family=Kanit&family=Krona+One&family=Montserrat:wght@300;900&family=Poppins&family=Prompt:wght@300;500&family=Quicksand:wght@300&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +27,6 @@ li {
   background-color: #fff;
   margin-top: 10px;
   padding: 10px 20px;
-
 }
 
 #root {
