@@ -12,8 +12,8 @@
 
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-      alt="react" width="50" height="50" /> </a>
-<a href='https://redux.js.org'><img src='https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67' width="50" height="50" alt='Redux Logo' aria-label='redux.js.org' /></a>
+      alt="react" width="55" height="55" /> </a>
+<a href='https://redux.js.org'><img src='https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67' width="55" height="55" alt='Redux Logo' aria-label='redux.js.org' /></a>
 
 ## Get Started
 
