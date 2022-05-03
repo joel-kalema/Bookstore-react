@@ -39,7 +39,22 @@ You may also see any lint errors in the console.
 **`npm test`**
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
+information.
+
+[**Redux Toolkit**](https://redux-toolkit.js.org) is our official recommended approach for writing Redux logic. It wraps around the Redux core, and contains packages and functions that we think are essential for building a Redux app. Redux Toolkit builds in our suggested best practices, simplifies most Redux tasks, prevents common mistakes, and makes it easier to write Redux applications.
+
+```
+npm install @reduxjs/toolkit react-redux
+```
+
+For the Redux core library by itself:
+
+```
+npm install redux
+```
+
+For more details, see [the Installation docs page](https://redux.js.org/introduction/installation).
 
 ## Authors
 
