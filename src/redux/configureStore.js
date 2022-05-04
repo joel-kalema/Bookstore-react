@@ -1,15 +1,18 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
-import booksReducer from './books/books';
+import ActionType from './categorie/categories';
 
-const reducer = combineReducers({
-  booksReducer,
-  // additional reducers could be added here
-});
+const initialState = [];
 
-const store = createStore(
-  reducer,
-  applyMiddleware(logger),
-);
+const booksReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ActionType.ADD_BOOK:
+      return [...state, action.payload];
 
-export default store;
+    case ActionType.REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.payload);
+
+    default:
+      return state;
+  }
+};
+
+export default booksReducer;
