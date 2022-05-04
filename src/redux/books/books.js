@@ -1,4 +1,5 @@
-import ActionType from '../categorie/categories';
+const ADD_BOOK = 'ADD_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const initialState = [
   {
@@ -28,21 +29,21 @@ const initialState = [
 ];
 
 export const addBook = (payload) => ({
-  type: ActionType.ADD_BOOK,
+  type: ADD_BOOK,
   payload,
 });
 
 export const removeBook = (payload) => ({
-  type: ActionType.REMOVE_BOOK,
+  type: REMOVE_BOOK,
   payload,
 });
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ActionType.ADD_BOOK:
+    case ADD_BOOK:
       return [...state, action.payload];
 
-    case ActionType.REMOVE_BOOK:
+    case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.payload);
 
     default:
