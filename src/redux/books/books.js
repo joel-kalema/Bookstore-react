@@ -1,6 +1,31 @@
 import ActionType from '../categorie/categories';
 
-const initialState = [];
+const initialState = [
+  {
+    id: 1,
+    categori: 'Action',
+    purcentage: 18,
+    title: 'Setup development environment',
+    author: 'joseph',
+    chapiter: 'Chapeter 07',
+  },
+  {
+    id: 2,
+    categori: 'Science Function',
+    purcentage: 40,
+    title: 'Develop website and add content',
+    author: 'fonsi',
+    chapiter: 'Chapeter 03',
+  },
+  {
+    id: 3,
+    categori: 'Economi',
+    purcentage: 3,
+    title: 'Deploy to live server',
+    author: 'julle',
+    chapiter: 'introduction',
+  },
+];
 
 export const addBook = (payload) => ({
   type: ActionType.ADD_BOOK,
