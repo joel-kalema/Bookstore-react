@@ -6,5 +6,6 @@ const reducer = (state = [], action) => {
     default: return state;
   }
 };
+export const checkStatus = () => ({ type: CHECK_STATUS });
 
 export default reducer;
