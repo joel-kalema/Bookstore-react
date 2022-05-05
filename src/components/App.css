@@ -31,7 +31,7 @@ li {
 
 #root {
   width: 70%;
-  height: 90vh;
+  min-height: 90vh;
   background-color: rgb(240, 240, 240);
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.301);
 }
@@ -165,6 +165,20 @@ nav a {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+.form select {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 6rem;
+  margin-right: 10px;
+  color: #a3a3a3;
+}
+
+option {
+  border: none;
+  color: #0290ff;
 }
 
 .categorie {

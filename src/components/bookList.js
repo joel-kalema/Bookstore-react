@@ -1,32 +1,29 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 import BookItem from './bookItem';
 import InputBook from './input';
 import './App.css';
 
-class BookList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const BookList = ({ books }) => (
+  <div className="containte">
+    <ul>
+      {books.map((book) => (
+        <BookItem
+          key={book.id}
+          book={book}
+        />
+      ))}
+    </ul>
+    <InputBook />
+  </div>
+);
 
-  render() {
-    return (
-      <div className="containte">
-        <ul>
-          {this.props.books.map((book) => (
-            <BookItem
-              key={book.id}
-              book={book}
-              deleteBookProps={this.props.deleteBookProps}
-            />
-          ))}
-        </ul>
-        <InputBook />
-      </div>
-    );
-  }
-}
+BookList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.shape(
+    {
+      id: PropTypes.string.isRequired,
+    },
+  )).isRequired,
+};
 
 export default BookList;

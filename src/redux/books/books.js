@@ -4,25 +4,25 @@ const REMOVE_BOOK = 'REMOVE_BOOK';
 const initialState = [
   {
     id: 1,
-    categori: 'Action',
-    purcentage: 18,
-    title: 'Setup development environment',
+    category: 'Action',
+    purcentage: 76,
+    booktitle: 'Setup development environment',
     author: 'joseph',
     chapiter: 'Chapeter 07',
   },
   {
     id: 2,
-    categori: 'Science Function',
+    category: 'Science Function',
     purcentage: 40,
-    title: 'Develop website and add content',
+    booktitle: 'Develop website and add content',
     author: 'fonsi',
     chapiter: 'Chapeter 03',
   },
   {
     id: 3,
-    categori: 'Economi',
+    category: 'Economi',
     purcentage: 3,
-    title: 'Deploy to live server',
+    booktitle: 'Deploy to live server',
     author: 'julle',
     chapiter: 'introduction',
   },
@@ -41,13 +41,13 @@ const booksReducer = (state = initialState, action) => {
   }
 };
 
-export const addBook = (id, title, author) => ({
+export const addBook = (payload) => ({
   type: ADD_BOOK,
-  id,
-  title,
-  author,
+  payload,
 });
 
-export const removeBook = (id) => ({ type: REMOVE_BOOK, id });
-
+export const removeBook = (payload) => ({
+  type: REMOVE_BOOK,
+  payload,
+});
 export default booksReducer;
