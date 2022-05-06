@@ -29,8 +29,8 @@ const BookItem = ({ book }) => {
         <CircularProgressbar value={60} text={`${60}%`} />
       </div>
       <div className="chapiter">
-        <h4>Chapeter 03</h4>
-        <p>4</p>
+        <h4>Current Chapeter</h4>
+        <p>Chapeter 04</p>
         <button type="button">UPDATE Progresse</button>
       </div>
     </li>
