@@ -7,12 +7,12 @@
 }
 
 body {
+  padding-top: 40px;
   font-family: 'Poppins', sans-serif;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: rgb(230, 230, 230);
 }
 
@@ -31,7 +31,7 @@ li {
 
 #root {
   width: 70%;
-  min-height: 90vh;
+  min-height: 80vh;
   background-color: rgb(240, 240, 240);
   box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.301);
 }
@@ -176,9 +176,18 @@ nav a {
   color: #a3a3a3;
 }
 
+small {
+  color: red;
+}
+
 option {
   border: none;
   color: #0290ff;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }
 
 .categorie {
