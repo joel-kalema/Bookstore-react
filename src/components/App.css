@@ -176,9 +176,18 @@ nav a {
   color: #a3a3a3;
 }
 
+small {
+  color: red;
+}
+
 option {
   border: none;
   color: #0290ff;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }
 
 .categorie {

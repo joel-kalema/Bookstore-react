@@ -8,7 +8,7 @@ import { removeBook } from '../redux/books/books';
 
 const BookItem = ({ book }) => {
   const {
-    booktitle, id, category, author,
+    title, id, category, author,
   } = book;
   const dispatch = useDispatch();
   return (
@@ -16,7 +16,7 @@ const BookItem = ({ book }) => {
       <div className="title-datas">
         <div>
           <h5>{category}</h5>
-          <h4>{booktitle}</h4>
+          <h4>{title}</h4>
           <p>{author}</p>
         </div>
         <div>
@@ -40,7 +40,7 @@ const BookItem = ({ book }) => {
 BookItem.propTypes = {
   book: PropTypes.shape(
     {
-      booktitle: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,
       author: PropTypes.string.isRequired,
